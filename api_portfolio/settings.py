@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
+CSRF_TRUSTED_ORIGINS = ['https://api-portfolio-production-c9b8.up.railway.app']
+
 
 # Application definition
 
