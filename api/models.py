@@ -5,7 +5,7 @@ from django.db import models
 
 class About(models.Model):
     name = models.CharField(max_length=50)
-    image = models.ImageField(upload_to="portfolio")
+    image = models.ImageField(upload_to="portfolio",null=True)
     email = models.EmailField(null=True)
     phone = models.BigIntegerField(null=True)
     age = models.IntegerField(null=True)
