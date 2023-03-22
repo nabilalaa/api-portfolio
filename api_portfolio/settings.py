@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u)_su&&qj5$7aqqh-s%$iz73kt=flq0-(0n=nk@t&psv*zgf(4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [".vercel.app"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = ['https://api-portfolio-production-c9b8.up.railway.app']
