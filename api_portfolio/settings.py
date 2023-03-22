@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u)_su&&qj5$7aqqh-s%$iz73kt=flq0-(0n=nk@t&psv*zgf(4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app","127.0.0.1"]
+ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = ['https://api-portfolio-production-c9b8.up.railway.app']
@@ -82,12 +82,24 @@ WSGI_APPLICATION = 'api_portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfolio_7ty4',
+        'USER': 'portfolio_7ty4_user',
+        'PASSWORD': 'HXKpy4W7Jptxol78wOFB8vFpNrOEA0Wu',
+        'HOST': 'dpg-cgbh2vl269v4icrrpjkg-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
